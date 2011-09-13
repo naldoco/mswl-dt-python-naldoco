@@ -1,0 +1,41 @@
+== Python Exercises ==
+
+1. Files and lists
+
+Write a Python script that reads the contents of the passwd file (/etc/passwd) and
+prints the shell used by every username. The output should be something like this:
+root -> /bin/bash
+daemon -> /bin/sh
+bin -> /bin/sh
+sys -> /bin/sh
+sync -> /bin/sync
+games -> /bin/sh
+man -> /bin/sh
+lp -> /bin/sh
+mail -> /bin/sh
+news -> /bin/sh
+uucp -> /bin/sh
+proxy -> /bin/sh
+www-data -> /bin/sh
+
+2. Files and dictionaries
+
+Modify the script of the previous exercise to only show the shell used by a given
+user. The shell used by every username should be stored in a dictionary, and the user-
+name of which you want to get the shell will be provided as a command line argument.
+You should handle possible errors like invalid user names or even if no user name is
+provided.
+
+3. Calculator
+
+Write a script to work like a calculator, implementing basic operations (+, -, *,/),
+for two operators. The script will receive the operators and the operation from the
+command line, see the examples below:
+
+$ ./calculator.py 30 + 25
+$ ./calculator.py 30 - 25
+$ ./calculator.py 30 \* 25
+$ ./calculator.py 30 / 25
+
+Note that ’*’ must be escaped, since it’s a special character for the shell. Every
+possible error should be handled showing appropriate error messages.
