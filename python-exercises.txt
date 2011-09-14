@@ -18,6 +18,8 @@ uucp -> /bin/sh
 proxy -> /bin/sh
 www-data -> /bin/sh
 
+## Tip: string.strip(), string.split()
+
 2. Files and dictionaries
 
 Modify the script of the previous exercise to only show the shell used by a given
